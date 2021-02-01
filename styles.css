@@ -1,7 +1,6 @@
 @charset "UTF-8";
 :root {
   font-size: 10px;
-  color: green;
 }
 
 body {
@@ -9,7 +8,7 @@ body {
 }
 
 h2 {
-  font-size: 3.4rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
