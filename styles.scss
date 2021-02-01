@@ -1,0 +1,382 @@
+:root {
+   font-size: 10px;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+   font-size: 3.4rem;
+   font-weight: 700;
+}
+
+.header_menu {
+   .main-menu {
+      padding: 30px 0 30px 0;
+      border-bottom: 1px solid #828282;
+
+      a {
+         text-decoration: none;
+         color: #828282;
+         font-size: 1.8rem;
+
+         &:hover {
+            color: #070707;
+            transition: .5s;
+         }
+      }
+   }
+}
+
+.header_menu__mobile {
+   height: 20px;
+   position: relative;
+
+   .burger {
+      z-index: 1;
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      right: 7%;
+      top: 50px;
+
+      a {
+         text-decoration: none;
+         color: black;
+         font-size: 2.7rem;
+
+         &:focus {
+            color: #828282;
+         }
+      }
+   }
+}
+
+.burger-active .fas::before {
+   content: "\f00d";
+}
+
+.main-menu__mobile {
+   position: absolute;
+   left: -100%;
+   display: none;
+   background-color: white;
+   height: 100vh;
+
+   nav {
+      margin-top: 25px;
+
+      a { 
+         color:#828282;
+         font-weight: 700;
+         text-decoration: none;
+         font-size: 3.4rem;
+         margin-bottom: 60px;
+         margin-left: 15px;
+
+         &:focus {
+            color: black;
+         }
+      }
+   }
+}
+
+.main-menu__mobile_visible {
+   left: 0;
+}
+
+.header_info {
+   padding: 40px 0 40px 0;
+   flex-direction: row;
+   align-items: flex-end;
+
+   .header_name {
+      font-size: 4.7rem;
+      font-weight: bold;
+   }
+
+   .descr {
+      font-size: 1.8rem;
+   }
+}
+
+.lang,
+.lang-mob {
+   writing-mode: vertical-lr;
+   transform:rotate(180deg);
+   font-size: 1.6rem;
+
+   a {
+      text-decoration: none;
+      color: black;
+   }
+}
+
+.lang-mob {
+   font-size: 34px;
+   position: absolute;
+
+   right: 6%;
+   bottom: 15%;
+   transform: none;
+   writing-mode: tb;
+}
+
+#eng {
+   cursor: default;
+}
+
+.header_img {
+   img {
+      width: 100%;
+   }
+   .mob {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+   }
+}
+
+.about {
+   margin-top: 225px;
+
+   .row {
+      margin-bottom: 45px;
+      text-align: center;
+
+      span {
+         font-size: 1.8rem;
+      }
+   }
+}
+
+.skills {
+   margin-top: 200px;
+   text-align: center;
+
+   h2 {
+      margin-bottom: 65px;
+   }
+
+   span {
+      font-size: 1.8rem;
+   }
+
+   .programs {
+      margin-top: 90px;
+
+      span {
+         display: block;
+         color: #828282;
+         font-size: 1.4rem;
+         font-weight: 700;
+         text-align: center;
+         padding: 20px 0 40px 0;
+      }
+
+      .figma {
+         padding-bottom: 52px;
+      }
+   }
+}
+
+.rate {
+   float: left;
+   height: 25px;
+   padding: 0 10px;
+}
+.rate:not(:checked) > input {
+   position:absolute;
+   top:-9999px;
+}
+.rate:not(:checked) > label {
+   float:right;
+   width:1em;
+   overflow:hidden;
+   white-space:nowrap;
+   cursor:pointer;
+   font-size:25px;
+   color:#ccc;
+}
+.rate:not(:checked) > label:before {
+   content: '★ ';
+}
+.rate > input:checked ~ label {
+   color: black;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+   color: black;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+   color: black;
+}
+
+.portfolio {
+   margin-top: 230px;
+
+   h2 {
+      margin-bottom: 80px;
+   }
+
+   img {
+      width: 100%;
+   }
+
+   .link {
+      padding: 60px 0 100px 0;
+
+      a {
+         color: black;
+         font-size: 1.8rem;
+         text-decoration: none;
+         display: inline-block;
+         position: relative;
+      }
+      
+      .effect-underline:after {
+         content: '';
+         position: absolute;
+         left: 0;
+         display: inline-block;
+         height: 1em;
+         width: 100%;
+         border-bottom: 1px solid;
+         margin-top: 10px;
+         opacity: 0;
+         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+         transition: opacity 0.5s, transform 0.5s;
+         -webkit-transform: scale(0,1);
+         transform: scale(0,1);
+      }
+      
+      .effect-underline:hover:after {
+         opacity: 1;
+         -webkit-transform: scale(1);
+         transform: scale(1);
+      }
+   }
+   .link-first {
+      padding: 20px 0 100px 0;
+   }
+}
+
+footer {
+
+   h2 {
+      padding: 50px 0 20px 0;
+   }
+
+   span {
+      font-size: 1.8rem;
+   }
+
+   .footer_button {
+      margin: 50px 0 90px 0;
+
+      a {
+         text-decoration: none;
+         color: white;
+         background-color: black;
+         padding: 15px 30px;
+         border: 2px solid transparent;
+         border-radius: 25px;
+         font-size: 1.8rem;
+
+         &:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            transition: .5s ease-in;
+         }
+      }
+   }
+
+   .social {
+      margin-bottom: 45px;
+
+      .item {
+         border: 2px solid transparent;
+         border-radius: 10px;
+         padding: 10px;
+
+         &:hover {
+            border: 2px solid black;
+            transition: .5s ease-in;
+         }
+      }
+   }
+
+   .small {
+      font-size: 1.4rem;
+      color: #828282;
+      padding-bottom: 125px;
+   }
+}
+
+@media (min-width: 1600px) {
+   :root {
+      font-size: 12px;
+   }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+   .container {
+      max-width: 960px;
+   }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+   header {
+      .header_menu {
+         display: none;
+      }
+
+      .header_menu__mobile {
+         .burger {
+            display: block;
+         }
+      }
+
+      .main-menu__mobile {
+         display: block;
+      }
+
+      .header_info {
+         padding: 20px 0 30px 0;
+
+         .lang {
+            span {
+               display: none;
+            }
+         }
+      }
+   }
+
+   .about {
+      margin-top: 150px;
+   }
+
+   .skills {
+      margin-top: 150px;
+
+      .programs {
+         margin-top: 45px;
+
+         .skill {
+            padding-top: 50px;
+         }
+      }
+   }
+
+   .portfolio {
+      margin-top: 180px;
+   }
+}

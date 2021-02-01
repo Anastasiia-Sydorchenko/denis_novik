@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <link rel="stylesheet" href="./styles.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+   <title>Denis Novik</title>
+</head>
+
+<body>
+   <div class="container">
+
+      <header>
+         <div class="row">
+            <div class="col header_menu">
+               <nav class="main-menu d-flex justify-content-between">
+                  <a href="#">Home</a>
+                  <a href="#">About me</a>
+                  <a href="#">Skills</a>
+                  <a href="#">Portfolio</a>
+                  <a href="#">Contacts</a>
+               </nav>
+            </div>
+
+            <div class="header_menu__mobile">
+               <div class="burger"><a href="#"><i class="fas fa-bars"></i></a></div>
+            </div>
+
+            <div class="main-menu__mobile">
+
+               <nav class="d-flex flex-column">
+                  <a href="#">Home</a>
+                  <a href="#">About me</a>
+                  <a href="#">Skills</a>
+                  <a href="#">Portfolio</a>
+                  <a href="#">Contacts</a>
+               </nav>
+
+               <div class="lang-mob">
+                  <span><a href="#">RU</a></span>
+                  <span>|</span>
+                  <span><strong><a href="#" id="eng">ENG</a></strong></span>
+               </div>
+
+            </div>
+
+         </div>
+         <div class="row header_info d-flex justify-content-between align-items-end">
+            <div class="col-2 header_name">
+               Denis Novik
+            </div>
+            <div class="col-md-3 descr">
+               UX | UI designer <br>
+               24 years old, Minsk
+            </div>
+            <div class="col-md-1 lang d-flex justify-content-end">
+               <span><a href="#">RU</a></span>
+               <span>|</span>
+               <span><strong><a href="#" id="eng">ENG</a></strong></span>
+            </div>
+         </div>
+         <div class="row header_img">
+            <div class="col d-none d-md-block">
+               <img src="./img/header_img.png" class="img-fluid" alt="Devis Novik">
+            </div>
+            <div class="col d-md-none">
+               <img class="mob" src="./img/designer_mob.png" alt="Devis Novik">
+            </div>
+         </div>
+      </header>
+
+      <div class="about d-flex flex-column align-items-center">
+         <div class="row">
+            <div class="col">
+               <h2>About me</h2>
+            </div>
+         </div>
+         <div class="row col col-md-7">
+            <span>
+               Hi, I'm Denis – UX/UI designer from Minsk.
+               I'm interested in design and everything connected with it.
+            </span>
+         </div>
+         <div class="row col col-md-6">
+            <span>
+               I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+            </span>
+         </div>
+         <div class="row col col-md-5">
+            <span>
+               Ready to implement excellent projects
+               with wonderful people.
+            </span>
+         </div>
+      </div>
+
+      <div class="skills">
+         <div class="row">
+            <div class="col">
+               <h2>Skills</h2>
+            </div>
+         </div>
+         <div class="row">
+            <span>I work in such programs as</span>
+         </div>
+         <div class="row programs d-flex justify-content-between">
+            <div class="skill col-12 col-sm-6 col-md-3">
+               <img src="./img/Adobe Photoshop.png" alt="Adobe Photoshop">
+               <span>Adobe <br> Photoshop</span>
+               <div class="col d-flex justify-content-center">
+                  <div class="rate">
+                     <input type="radio" id="star5" name="adobe-photoshop" value="5" />
+                     <label for="star5" title="text">5 stars</label>
+                     <input type="radio" id="star4" name="adobe-photoshop" value="4" checked />
+                     <label for="star4" title="text">4 stars</label>
+                     <input type="radio" id="star3" name="adobe-photoshop" value="3" />
+                     <label for="star3" title="text">3 stars</label>
+                     <input type="radio" id="star2" name="adobe-photoshop" value="2" />
+                     <label for="star2" title="text">2 stars</label>
+                     <input type="radio" id="star1" name="adobe-photoshop" value="1" />
+                     <label for="star1" title="text">1 star</label>
+                  </div>
+               </div>
+            </div>
+            <div class="skill col-12 col-sm-6 col-md-3">
+               <img src="./img/Adobe Illustrator.png" alt="Adobe Illustrator">
+               <span>Adobe <br> Illustrator</span>
+               <div class="col d-flex justify-content-center">
+                  <div class="rate">
+                     <input type="radio" id="star5" name="adobe-illustrator" value="5" />
+                     <label for="star5" title="text">5 stars</label>
+                     <input type="radio" id="star4" name="adobe-illustrator" value="4" />
+                     <label for="star4" title="text">4 stars</label>
+                     <input type="radio" id="star3" name="adobe-illustrator" value="3" checked />
+                     <label for="star3" title="text">3 stars</label>
+                     <input type="radio" id="star2" name="adobe-illustrator" value="2" />
+                     <label for="star2" title="text">2 stars</label>
+                     <input type="radio" id="star1" name="adobe-illustrator" value="1" />
+                     <label for="star1" title="text">1 star</label>
+                  </div>
+               </div>
+            </div>
+            <div class="skill col-12 col-sm-6 col-md-3">
+               <img src="./img/Adobe After Effects.png" alt="Adobe After Effects">
+               <span>Adobe <br> After Effects</span>
+               <div class="col d-flex justify-content-center">
+                  <div class="rate">
+                     <input type="radio" id="star5" name="adobe-after-effects" value="5" />
+                     <label for="star5" title="text">5 stars</label>
+                     <input type="radio" id="star4" name="adobe-after-effects" value="4" checked />
+                     <label for="star4" title="text">4 stars</label>
+                     <input type="radio" id="star3" name="adobe-after-effects" value="3" />
+                     <label for="star3" title="text">3 stars</label>
+                     <input type="radio" id="star2" name="adobe-after-effects" value="2" />
+                     <label for="star2" title="text">2 stars</label>
+                     <input type="radio" id="star1" name="adobe-after-effects" value="1" />
+                     <label for="star1" title="text">1 star</label>
+                  </div>
+               </div>
+            </div>
+            <div class="skill col-12 col-sm-6 col-md-3">
+               <img src="./img/figma.png" alt="Figma">
+               <span class="figma">Figma</span>
+               <div class="col d-flex justify-content-center">
+                  <div class="rate">
+                     <input type="radio" id="star5" name="figma" value="5" />
+                     <label for="star5" title="text">5 stars</label>
+                     <input type="radio" id="star4" name="figma" value="4" checked />
+                     <label for="star4" title="text">4 stars</label>
+                     <input type="radio" id="star3" name="figma" value="3" />
+                     <label for="star3" title="text">3 stars</label>
+                     <input type="radio" id="star2" name="figma" value="2" />
+                     <label for="star2" title="text">2 stars</label>
+                     <input type="radio" id="star1" name="figma" value="1" />
+                     <label for="star1" title="text">1 star</label>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="portfolio d-flex flex-column align-items-center">
+         <div class="row">
+            <div class="col">
+               <h2>Portfolio</h2>
+            </div>
+         </div>
+
+
+            <img src="./img/portfolio_1.png" alt="...">
+
+         <div class="row">
+            <div class="col link link-first">
+               <a href="#" class="effect-underline">Online fashion store - Homepage</a>
+            </div>
+         </div>
+
+         <img src="./img/portfolio_2.png" alt="...">
+
+
+         <div class="row">
+            <div class="col link">
+               <a href="#" class="effect-underline">Reebok Store - Concept</a>
+            </div>
+         </div>
+
+            <img src="./img/portfolio_3.png" alt="...">
+
+         <div class="row">
+            <div class="col link">
+               <a href="#" class="effect-underline">Braun Landing Page - Concept</a>
+            </div>
+         </div>
+      </div>
+
+      <footer>
+         <div class="row">
+            <div class="col">
+               <h2 class="text-center">Contacts</h2>
+            </div>
+         </div>
+
+         <div class="row d-flex justify-content-center">
+            <div class="col text-center">
+               <span>Want to know more or just chat? <br>
+                  You are welcome!</span>
+            </div>
+         </div>
+
+         <div class="row d-flex justify-content-center">
+            <div class="col footer_button text-center">
+               <a href="#">Send message</a>
+            </div>
+         </div>
+
+         <div class="row social d-flex justify-content-center">
+            <div class="col-6 d-flex justify-content-around">
+               <div class="item">
+                  <a href="#">
+                     <img src="./img/linkedin.png" alt="LinkedIn">
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="#"> <img src="./img/inst.png" alt="Instagram">
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="#">
+                     <img src="./img/beehance.png" alt="Beehance">
+                  </a>
+               </div>
+               <div class="item">
+                  <a href="#">
+                     <img src="./img/dribble.png" alt="Dribble">
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="row d-flex justify-content-center">
+            <div class="col col-md-4 text-center">
+               <span class="small">
+                  Like me on <br> LinkedIn, Instagram, Behance, Dribble
+               </span>
+            </div>
+         </div>
+      </footer>
+   </div>
+
+   <script src="./myScript.js"></script>
+
+
+</body>
+</html>
